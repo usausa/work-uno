@@ -1,7 +1,8 @@
+namespace UnoApp;
+
 using Uno.UI.Runtime.Skia;
 
-namespace UnoApp;
-public class Program
+public static class Program
 {
     [STAThread]
     public static void Main(string[] args)
