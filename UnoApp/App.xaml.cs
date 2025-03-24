@@ -9,7 +9,8 @@ public partial class App : Application
         InitializeComponent();
     }
 
-    protected Window? MainWindow { get; private set; }
+    public Window? MainWindow { get; private set; }
+
     protected IHost? Host { get; private set; }
 
     protected override void OnLaunched(LaunchActivatedEventArgs args)
@@ -82,7 +83,11 @@ public partial class App : Application
             // parameter
             rootFrame.Navigate(typeof(MainPage), args.Arguments);
         }
+
         // Ensure the current window is active
+        //MainWindow.AppWindow.MoveAndResize(new RectInt32 { X = 0, Y = 0, Width = 1920, Height = 1080 });
+        //MainWindow.Activated += (sender, eventArgs) => MainWindow.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
+        //MainWindow.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);MainWindow.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
         MainWindow.Activate();
     }
 }
