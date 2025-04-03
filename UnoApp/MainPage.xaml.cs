@@ -9,9 +9,9 @@ public sealed partial class MainPage : Page
         this.InitializeComponent();
     }
 
-    private void MainPage_OnLoading(FrameworkElement sender, object args)
-    {
-        var app = (App)Application.Current;
-        app.MainWindow!.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
-    }
+    //private void MainPage_OnLoading(FrameworkElement sender, object args)
+    //{
+    //    var app = (App)Application.Current;
+    //    app.MainWindow!.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
+    //}
 }

@@ -3,8 +3,7 @@
       xmlns:local="using:UnoApp"
       xmlns:um="using:Uno.Material" xmlns:utu="using:Uno.Toolkit.UI"
       x:Class="UnoApp.MainPage"
-      Background="{ThemeResource BackgroundBrush}"
-      Loading="MainPage_OnLoading">
+      Background="{ThemeResource BackgroundBrush}">
     <ScrollViewer>
         <Grid utu:SafeArea.Insets="VisibleBounds">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">

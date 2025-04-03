@@ -2,6 +2,8 @@ namespace UnoApp;
 
 using Uno.Resizetizer;
 
+using Microsoft.UI.Windowing;
+
 public partial class App : Application
 {
     public App()
@@ -88,6 +90,8 @@ public partial class App : Application
         //MainWindow.AppWindow.MoveAndResize(new RectInt32 { X = 0, Y = 0, Width = 1920, Height = 1080 });
         //MainWindow.Activated += (sender, eventArgs) => MainWindow.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
         //MainWindow.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);MainWindow.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
+        //rootFrame.Loading += (_, _) => MainWindow!.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
+        rootFrame.Loaded += (_, _) => MainWindow!.AppWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
         MainWindow.Activate();
     }
 }
